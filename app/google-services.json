@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "651505191636",
+    "project_id": "kiora-restaurante",
+    "storage_bucket": "kiora-restaurante.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651505191636:android:fdb9b4456629e2d3ff8941",
+        "android_client_info": {
+          "package_name": "com.example.appkiora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDgnjxkETHu5ressNxYEt5Rj6TJHTO7Ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

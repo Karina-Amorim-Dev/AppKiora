@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo Kiora -->
+    <ImageView
+        android:id="@+id/imgFundoHomeCliente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fundo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Conteúdo da tela -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Cabeçalho com ícone de saída -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnSair"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="end|top"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_logout"
+                    android:tint="#D9B27A"
+                    android:padding="10dp"
+                    android:contentDescription="Sair da conta"
+                    android:scaleType="fitCenter" />
+
+            </FrameLayout>
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imgLogoHomeCliente"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="Logo Kiora" />
+
+            <!-- Saudação -->
+            <TextView
+                android:id="@+id/txtSaudacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Olá! 👋"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/txtSubtituloHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="O que você deseja fazer?"
+                android:textColor="#D9B27A"
+                android:textSize="16sp" />
+
+            <!-- Espaço -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <!-- NOVO: Fazer reserva -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFazerReservaCliente"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:text="FAZER RESERVA"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_botao_kiora"
+                android:backgroundTint="@null" />
+
+            <!-- Minhas Reservas -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMinhasReservas"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:text="MINHAS RESERVAS"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_botao_kiora"
+                android:backgroundTint="@null" />
+
+            <!-- Meu Perfil -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMeuPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="30dp"
+                android:text="MEU PERFIL"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_botao_kiora"
+                android:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

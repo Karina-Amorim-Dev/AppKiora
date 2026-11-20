@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_minha_conta">
+
+    <!-- Título do modal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar perfil"
+        android:textColor="#D9B27A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Descrição -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atualize seus dados da conta Kiora"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo de nome -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome completo"
+        android:textColor="#D9B27A"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtNomePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="Digite seu nome completo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BDBDBD"
+        android:inputType="textPersonName|textCapWords"
+        android:singleLine="true"
+        android:backgroundTint="#D9B27A" />
+
+    <!-- Campo de e-mail -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="E-mail / Login"
+        android:textColor="#D9B27A"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtEmailPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="Digite seu e-mail"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BDBDBD"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:backgroundTint="#D9B27A" />
+
+    <!-- Botão salvar -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSalvarEdicaoPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="SALVAR ALTERAÇÕES"
+        android:textColor="#111111"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_botao_kiora"
+        android:backgroundTint="#D9B27A" />
+
+    <!-- Espaçamento -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <!-- Botão cancelar -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancelarEdicaoPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CANCELAR"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_botao_kiora"
+        android:backgroundTint="@null" />
+
+</LinearLayout>

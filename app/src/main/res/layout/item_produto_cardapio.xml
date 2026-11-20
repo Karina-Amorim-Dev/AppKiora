@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardProduto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_dialog_minha_conta"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Imagem do produto -->
+    <ImageView
+        android:id="@+id/imgProduto"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagem do produto"
+        android:visibility="gone" />
+
+    <!-- Identificação de combo -->
+    <TextView
+        android:id="@+id/txtComboProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="COMBO"
+        android:textColor="#D9B27A"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Nome do produto -->
+    <TextView
+        android:id="@+id/txtNomeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nome do produto"
+        android:textColor="#D9B27A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/txtDescricaoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Descrição do produto"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <!-- Preço original -->
+    <TextView
+        android:id="@+id/txtPrecoOriginalProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#CCCCCC"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <!-- Desconto -->
+    <TextView
+        android:id="@+id/txtDescontoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#D9B27A"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Preço atual -->
+    <TextView
+        android:id="@+id/txtPrecoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="R$ 0,00"
+        android:textColor="#D9B27A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Disponibilidade -->
+    <TextView
+        android:id="@+id/txtDisponibilidadeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo da tela -->
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fundo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Ícone de acesso à conta no canto superior direito -->
+    <ImageButton
+        android:id="@+id/btnConta"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_conta"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:contentDescription="Entrar ou cadastrar-se" />
+
+    <!-- Conteúdo principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Logo -->
+
+        <!-- Espaço -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="70dp"
+            android:contentDescription="Logo Kiora"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+
+        <!-- Espaço entre a logo e os botões -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Botão Cardápio -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCardapio"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="CARDÁPIO"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_botao_kiora"
+            android:backgroundTint="@null" />
+
+        <!-- Espaço entre os botões -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Botão Fazer Reserva -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReserva"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="FAZER RESERVA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_botao_kiora"
+            android:backgroundTint="@null" />
+
+        <!-- Espaço entre os botões -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Acompanhamento de reserva sem login -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAcompanharReserva"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="ACOMPANHAR RESERVA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_botao_kiora"
+            android:backgroundTint="@null" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+        <!-- Ícones das redes e informações -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+            <!-- Site -->
+            <ImageButton
+                android:id="@+id/btnSite"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_site"
+                android:background="@android:color/transparent"
+                android:contentDescription="Site" />
+
+            <!-- Instagram -->
+            <ImageButton
+                android:id="@+id/btnInstagram"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_instagram"
+                android:background="@android:color/transparent"
+                android:contentDescription="Instagram" />
+
+            <!-- Facebook -->
+            <ImageButton
+                android:id="@+id/btnFacebook"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_facebook"
+                android:background="@android:color/transparent"
+                android:contentDescription="Facebook" />
+
+            <!-- Localização -->
+            <ImageButton
+                android:id="@+id/btnLocalizacao"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_localizacao"
+                android:background="@android:color/transparent"
+                android:contentDescription="Localização" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

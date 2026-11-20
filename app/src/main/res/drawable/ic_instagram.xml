@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Corpo do ícone -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#D9B27A"
+        android:strokeWidth="1.8"
+        android:pathData="M7,2.8
+            H17
+            C19.3,2.8 21.2,4.7 21.2,7
+            V17
+            C21.2,19.3 19.3,21.2 17,21.2
+            H7
+            C4.7,21.2 2.8,19.3 2.8,17
+            V7
+            C2.8,4.7 4.7,2.8 7,2.8 Z" />
+
+    <!-- Círculo central -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#D9B27A"
+        android:strokeWidth="1.8"
+        android:pathData="M12,7
+            A5,5 0,1 0,12,17
+            A5,5 0,1 0,12,7" />
+
+    <!-- Pequeno círculo superior -->
+    <path
+        android:fillColor="#D9B27A"
+        android:pathData="M17.5,6.5
+            A1.2,1.2 0,1 0,17.5,8.9
+            A1.2,1.2 0,1 0,17.5,6.5" />
+
+</vector>

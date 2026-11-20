@@ -1,0 +1,30 @@
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Android Studio
+.idea/
+*.iml
+
+# Configurações locais
+local.properties
+
+# Kotlin
+.kotlin/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Certificados e chaves privadas
+*.jks
+*.keystore
+
+# Arquivos temporários
+.externalNativeBuild/
+.cxx/

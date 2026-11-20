@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo da identidade visual do Kiora -->
+    <ImageView
+        android:id="@+id/imgFundoCardapio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fundo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Conteúdo principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imgLogoCardapio"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="Logo Kiora" />
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/txtTituloCardapio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="CARDÁPIO"
+                android:textColor="#D9B27A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:id="@+id/txtSubtituloCardapio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Uma experiência além do sabor."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <!-- Coleções -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="EXPLORE O CARDÁPIO"
+                android:textColor="#D9B27A"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/containerColecoesCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" />
+
+            <!-- Categorias dinâmicas -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="CATEGORIAS"
+                android:textColor="#D9B27A"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/containerCategoriasCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" />
+
+            <!-- Filtros -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="FILTRE OS PRODUTOS"
+                android:textColor="#D9B27A"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- Busca -->
+            <EditText
+                android:id="@+id/edtBuscaCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:hint="Buscar produto..."
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#CCCCCC"
+                android:backgroundTint="#D9B27A" />
+
+            <!-- Faixa de preços -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Faixa de preço"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtPrecoMinimo"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:hint="Mínimo"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CCCCCC"
+                    android:backgroundTint="#D9B27A" />
+
+                <EditText
+                    android:id="@+id/edtPrecoMaximo"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:hint="Máximo"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CCCCCC"
+                    android:backgroundTint="#D9B27A" />
+
+            </LinearLayout>
+
+            <!-- Ordenação -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Ordenar por"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spnOrdenacaoCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#D9B27A" />
+
+            <!-- Opções adicionais -->
+            <CheckBox
+                android:id="@+id/chkSomenteDisponiveis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Somente produtos disponíveis"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#D9B27A" />
+
+            <CheckBox
+                android:id="@+id/chkSomentePromocoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Somente produtos em promoção"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#D9B27A" />
+
+            <!-- Aplicar filtros -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAplicarFiltros"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:text="APLICAR FILTROS"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_botao_kiora"
+                android:backgroundTint="@null" />
+
+            <!-- Título dos resultados -->
+            <TextView
+                android:id="@+id/txtTituloResultadosCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Todos os produtos"
+                android:textColor="#D9B27A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Período da coleção Mais pedidos -->
+            <TextView
+                android:id="@+id/txtPeriodoMaisPedidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Mensagens e erros dos filtros -->
+            <TextView
+                android:id="@+id/txtMensagemCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!-- Produtos -->
+            <LinearLayout
+                android:id="@+id/containerProdutosCardapio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Cabeça do usuário -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#D9B27A"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M24,7 A8,8 0,1 1,24,23 A8,8 0,1 1,24,7" />
+
+    <!-- Ombros e corpo -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#D9B27A"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8,41 C8,32 14,27 24,27 C34,27 40,32 40,41" />
+
+</vector>

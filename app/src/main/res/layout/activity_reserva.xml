@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo com a identidade visual do Kiora -->
+    <ImageView
+        android:id="@+id/imgFundoReserva"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fundo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null" />
+
+    <!-- Conteúdo rolável para telas menores -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="32dp">
+
+            <!-- Cabeçalho com a logo -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Logo Kiora" />
+
+            </FrameLayout>
+
+            <!-- Título da tela -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="RESERVAR MESA"
+                android:textColor="#D9B27A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Planeje sua experiência Kiora."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <!-- Campo: nome completo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="NOME COMPLETO"
+                android:textColor="#D9B27A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNomeReserva"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_botao_kiora"
+                android:hint="Digite seu nome completo"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="100"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD"
+                android:textSize="16sp" />
+
+            <!-- Campo: telefone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="TELEFONE COM DDD"
+                android:textColor="#D9B27A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtTelefoneReserva"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_botao_kiora"
+                android:hint="Ex.: (11) 99999-9999"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD"
+                android:textSize="16sp" />
+
+            <!-- Campo: quantidade de pessoas -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="QUANTIDADE DE PESSOAS"
+                android:textColor="#D9B27A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Campo numérico: quantidade de pessoas -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_botao_kiora">
+
+                <!-- Ícone de pessoas -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/ic_pessoas"
+                    android:contentDescription="@null" />
+
+                <!-- Quantidade de pessoas: de 1 a 6 -->
+                <EditText
+                    android:id="@+id/edtQuantidadePessoas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Digite a quantidade (1 a 6)"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="0dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#BDBDBD"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <!-- Campo: data e horário da reserva -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="DATA E HORÁRIO DA RESERVA"
+                android:textColor="#D9B27A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDataHorarioReserva"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_botao_kiora"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:drawableStart="@drawable/ic_data"
+                android:drawablePadding="12dp"
+                android:text="Selecione a data e o horário"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+
+            <!-- Campo: observações opcionais -->
+            <!-- Oculto porque a API não recebe observações -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="OBSERVAÇÕES (OPCIONAL)"
+                android:textColor="#D9B27A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edtObservacoesReserva"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_botao_kiora"
+                android:gravity="top|start"
+                android:hint="Ex.: preferência por mesa próxima à janela..."
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="300"
+                android:padding="14dp"
+                android:drawableStart="@drawable/ic_observacoes"
+                android:drawablePadding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#BDBDBD"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!-- Botão para continuar -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConfirmarReserva"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_botao_kiora"
+                android:backgroundTint="@null"
+                android:text="CONTINUAR"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppKiora</string>
+
+    <string-array name="quantidade_pessoas">
+        <item>Selecione a quantidade</item>
+        <item>1 pessoa</item>
+        <item>2 pessoas</item>
+        <item>3 pessoas</item>
+        <item>4 pessoas</item>
+        <item>5 pessoas</item>
+        <item>6 pessoas</item>
+        <item>7 pessoas</item>
+        <item>8 pessoas</item>
+    </string-array>
+</resources>
